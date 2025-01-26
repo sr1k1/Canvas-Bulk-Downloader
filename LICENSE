@@ -12,6 +12,12 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
+**Third-Party Licenses:** 
+
+This software utilizes CanvasAPI, which is subject to Instructure’s terms of 
+service and license available at https://www.instructure.com/policies/canvas-api-policy. 
+Users must comply with all applicable API usage restrictions when using this software. 
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
