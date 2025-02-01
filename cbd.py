@@ -191,6 +191,8 @@ for course_id_str in skip_courses_ls.readlines():
 skip_courses_ls.close()
 skip_courses_ls = open(f'{current_dir}/skip_courses.txt', 'a')
 
+# Append a '\n' to start on a new line (regardless of what course number you've placed down)
+skip_courses_ls.write(' \n')
 
 ## Load credentials from the .yaml file
 with open(f'{current_dir}/creds.yaml', 'r') as f:
@@ -317,10 +319,10 @@ for current_course in canvas.get_courses():
                 download_file(file, folder_path, course_items_urls)
         except Forbidden:
             break
-    
+
     # Once we have downloaded everything from this course, we want to update the text file with 
     # the course id and make sure that it gets saved on the txt file in case of a crash.
-    skip_courses_ls.write(str(current_id) + ' \n')    
+    skip_courses_ls.write(str(current_id) + ' \n')
 
     # Ensure the changes are saved in case of program crash
     skip_courses_ls.flush()
